@@ -15,7 +15,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
   border-bottom: 1px solid black;
 }
 
@@ -86,6 +85,8 @@ header {
   vertical-align: middle;
 }
 
+/* ---------------- Second Navbar ---------------- */
+
 .second-nav {
   padding: 10px 50px;
 }
@@ -94,6 +95,7 @@ header {
   display: flex;
   list-style: none;
   gap: 25px;
+  align-items: center;
 }
 
 .secondnav-links a {
@@ -101,24 +103,80 @@ header {
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: #333;
+  color: #333;   /* Default black */
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
 }
 
-.secondnav-links a:hover {
-  color: #ffffff;
-}
-
-.upcoming-class {
-  display: flex;
-  align-items: center;
-  background-color: #ff6b2c;
-  color: white;
-  padding: 4px 12px;
+/* Upcoming Classes Button */
+.secondnav-links a.upcoming-class {
+  background-color: #ff4d01;
+  color: #fff;          /* Force white text */
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
+}
+
+/* Hover Effect */
+.secondnav-links a:hover {
+  color: #ff6b2c;
+}
+
+.secondnav-links a.upcoming-class:hover {
+  background-color: #fa6429;
+  color: #fff;
+}
+.hero {
+    /* padding: 120px 0 60px; */
+  padding: 15px 50px;
+   background-color: rgb(242, 242, 242) ;
+}
+
+.container{
+  display: flex;
+}
+.image{
+  width: 50%;
+  height: auto;
+}
+.content{
+
+}
+.tagline{
+    background-color:#f8e0d7;
+    color:#fa6429;
+    padding: 0.5rem 5rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: 1px solid ;
+}
+.main-line{
+    font-size:65px;
+}
+.quality{
+    font-size:18px;
+    padding: 20px;
+}
+.facility{
+    font-size:25px;
+    padding: 20px;
+}
+.class-details{
+  display:flex;
+}
+.class-details-items{
+    background-color:#f8e0d7;
+    color:#fa6429;
+    padding:0rem 0rem 0rem 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: 1px solid ;
+    display: flex;
 }
